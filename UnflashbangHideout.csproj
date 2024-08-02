@@ -31,17 +31,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aki.Reflection">
-      <HintPath>References\Aki.Reflection.dll</HintPath>
-    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>References\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>E:\SP-Tarkov\3.9.4\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Harmony">
+      <HintPath>E:\SP-Tarkov\3.9.4\BepInEx\core\BepInEx.Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Preloader">
+      <HintPath>E:\SP-Tarkov\3.9.4\BepInEx\core\BepInEx.Preloader.dll</HintPath>
     </Reference>
     <Reference Include="Comfort">
       <HintPath>References\Comfort.dll</HintPath>
     </Reference>
     <Reference Include="Comfort.Unity">
       <HintPath>References\Comfort.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-reflection">
+      <HintPath>E:\SP-Tarkov\3.9.4\BepInEx\plugins\spt\spt-reflection.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -64,11 +73,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="BepInEx.Core" Version="5.*" />
-    <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="References\" />
+    <Content Include="E:\SP-Tarkov\3.9.4\BepInEx\core\BepInEx.dll">
+      <Link>References\BepInEx.dll</Link>
+    </Content>
+    <Content Include="E:\SP-Tarkov\3.9.4\BepInEx\plugins\spt\spt-reflection.dll">
+      <Link>References\spt-reflection.dll</Link>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
